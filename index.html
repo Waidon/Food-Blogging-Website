@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Juddy's Kitchen</title>
+</head>
+<body>
+    <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">FoodieBlog</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Recipes</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover Delicious Recipes</h1>
+      <p>Find seasonal, themed, everyday and healthy recipes that bring flavor and inspiration to your kitchen.</p>
+      <a href="#recipes"><button class="cta-btn" button-type="button">Explore Recipes</button></a>
+    </div>
+  </section>
+  
+  <!-- JavaScript for Hamburger Toggle -->
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function () {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+    
+</body>
+</html>
