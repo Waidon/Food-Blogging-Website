@@ -6,13 +6,16 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Juddy's Kitchen</title>
 </head>
 <body>
     <!-- Navigation -->
   <nav>
-    <div class="nav-logo">FoodieBlog</div>
+    <div class="nav-logo">Edible Escapades</div>
     <ul class="nav-links">
       <li><a href="#">Home</a></li>
       <li><a href="#">Recipes</a></li>
@@ -29,69 +32,126 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <h1>Discover Delicious Recipes</h1>
-      <p>Find seasonal, themed, everyday and healthy recipes that bring flavor and inspiration to your kitchen.</p>
-      <a href="#recipes"><button class="cta-btn" button-type="button">Explore Recipes</button></a>
+      <h1>Discover The World of Food</h1>
+      <p class="hero-text">A flavorful journey through restaurants, recipes, and unforgettable food experiences.</p>
+      <a href="#recipes"><button class="cta-btn" button-type="button"><i class="fas fa-book-open"></i> <br>Explore Recipes</button></a>
     </div>
   </section>
 
 
-   <!-- Introduction Section -->
-  <section id="welcome-section"> 
-  <div class="container">
-    <div class="intro-section">
-      <h2 id="intro-header">Welcome to My Food Blog!</h2>
-      <p class="welcome-description">I'm Juddy Olivia Cloete, a food enthusiast passionate about sharing delicious recipes that bring joy to your kitchen! From seasonal delights to everyday meals, I focus on simple, budget-friendly dishes that everyone can enjoy.</p>
+   <!-- About Section: Underneath Hero -->
+<section class="about-section">
+  <div class="container about-content">
+    <div class="about-text">
+      <h2>My Food Journey</h2>
+      <p>Welcome to my blog, a collection of flavorful stories from the restaurants I’ve visited and the dishes that left a lasting impression. I believe food is more than a meal; it’s a memory. Whether it’s a fine-dining experience or a hidden local gem, I share the tastes, textures, and tales behind every bite.</p>
+      <p>Join me as I explore different cuisines, review unforgettable meals, and share personal recipes inspired by the places I’ve been.</p>
     </div>
+    <div class="about-image">
+      <img src="./Images/Pasta.jpg" alt="Juddy enjoying a meal">
+    </div>
+  </div>
+</section>
+
+<!-- Featured Experience-->
+<section class="featured-articles">
+  <div class="container">
+    <h2 class="section-title"><i class="fas fa-utensils"></i>Featured Food Experiences</i></h2>
+    
+    <div class="articles-grid">
+      
+      <article class="article-card" data-aos="fade-up">
+        <img src="./Images/Pasta.jpg" alt="Pizza Night at Napoli's">
+        <div class="card-content">
+          <h3>Pizza Night at Napoli’s</h3>
+          <p>Authentic wood-fired pizzas and the scent of fresh basil set the tone for a cozy Italian evening.</p>
+          <a href="#" class="read-more">Read More →</a>
+        </div>
+      </article>
+
+      <article class="article-card" data-aos="fade-up">
+        <img src="./Images/Spaghetti Carbonara.jpg" alt="Cape Town Street Food Tour">
+        <div class="card-content">
+          <h3>Cape Town Street Food Tour</h3>
+          <p>A flavorful walk through Bo-Kaap’s best stalls — samoosas, bunny chow, and unexpected bites!</p>
+          <a href="#" class="read-more">Read More →</a>
+        </div>
+      </article>
+
+      <article class="article-card" data-aos="fade-up">
+        <img src="./Images/Chocolate Lava Cake.jpg" alt="Sunday Brunch at The Garden Café">
+        <div class="card-content">
+          <h3>Sunday Brunch at The Garden Café</h3>
+          <p>Organic smoothies, avocado toast, and sunshine — a perfect start to the week in a tranquil setting.</p>
+          <a href="#" class="read-more">Read More →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!--Footer Section-->
+<footer class="site-footer">
+  <div class="footer-grid">
+
+    <!-- About -->
+    <div class="footer-about">
+      <h4>About Me</h4>
+      <p>I’m Juddy Olivia Cloete, a food lover sharing personal recipes, restaurant reviews, and food stories from around the world.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-social">
+      <h4>Follow Me</h4>
+      <div class="social-icons">
+        <a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://youtube.com" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-newsletter">
+      <h4>Weekly Recipes</h4>
+      <form>
+        <input type="email" placeholder="Your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
   </div>
 
-  <!-- Recipe Categories (Menu) -->
-  <div class="container">
-    <h2 class="header-section">Explore by Category</h2>
-    <div class="recipe-menu">
-      <div class="category">Breakfast</div>
-      <div class="category">Quick Meals</div>
-      <div class="category">Desserts</div>
-      <div class="category">Healthy</div>
-      <div class="category">Cultural Cuisine</div>
-    </div>
-  </div>
+  <p class="footer-copy">© 2025 Juddy Olivia Cloete. All rights reserved.</p>
+</footer>
 
-  <!-- Featured Recipes Section -->
-  <div class="container">
-    <h2 class="header-section">Featured Recipes</h2>
-    <div class="featured-recipes">
-      <div class="recipe-card">
-        <img src="./Images/Spaghetti Carbonara.jpg" alt="Recipe 1">
-        <div class="recipe-info">
-          <h3>Spaghetti Carbonara</h3>
-          <p>A classic Italian pasta dish with eggs, cheese, pancetta, and pepper.</p>
-        </div>
-      </div>
-      <div class="recipe-card">
-        <img src="./Images/Avocado Toast.jpg" alt="Recipe 2">
-        <div class="recipe-info">
-          <h3>Avocado Toast</h3>
-          <p>A healthy, quick breakfast with smashed avocado, lemon, and chili flakes.</p>
-        </div>
-      </div>
-      <div class="recipe-card">
-        <img src="./Images/Chocolate Lava Cake.jpg" alt="Recipe 3">
-        <div class="recipe-info">
-          <h3>Chocolate Lava Cake</h3>
-          <p>A decadent molten chocolate dessert that's rich and indulgent.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  </section>
+
   
+
   <!-- JavaScript for Hamburger Toggle -->
   <script>
     document.getElementById('hamburger').addEventListener('click', function () {
       document.querySelector('.nav-links').classList.toggle('active');
     });
   </script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true      // whether animation should happen only once
+  });
+</script>
     
 </body>
 </html>
