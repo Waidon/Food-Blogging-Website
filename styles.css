@@ -239,7 +239,10 @@
       display: flex;
      
     }
-
+    .hamburger span {
+   
+    background: #94d2bd;
+   
     .hero {
         padding-top: 350px; /* increased padding to push content below nav */
     }
