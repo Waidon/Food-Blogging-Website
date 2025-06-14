@@ -74,7 +74,6 @@
     background: #94d2bd;
     margin: 4px 0;
     transition: all 0.3s;
-    
   }
   
   /* Hero Section Styles */
@@ -239,10 +238,11 @@
       display: flex;
      
     }
+
     .hamburger span {
-   
-    background: #94d2bd;
-   
+      color: #94d2bd;
+   }
+
     .hero {
         padding-top: 350px; /* increased padding to push content below nav */
     }
@@ -324,7 +324,7 @@
 }
 
 .read-more:hover {
-  color: #005f73;
+  color: #b92b33;
 }
 
 i {
@@ -384,7 +384,7 @@ i {
 }
 
 .social-icons a:hover {
-  color: #005f73;
+  color: #e63946;
   transform: scale(1.1);
 }
 
